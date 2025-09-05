@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.section-three .container {
+  background: #fff;
+  border-radius: 8px;
+  padding: 40px;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+/* Bloque superior: título a la izquierda y texto a la derecha */
+.top-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.top-text h1 {
+  font-size: 30px;
+  font-weight: 900;
+  flex: 1;
+}
+
+.right-text {
+  flex: 1;
+}
+
+.right-text p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.right-text button {
+  background: #111;
+  color: #fff;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* Imagen inferior */
+.bottom-image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.bottom-image {
+  grid-column: 1 / -1; /* Ocupa toda la fila */
+}
